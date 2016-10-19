@@ -25,14 +25,10 @@ namespace snake
 			
 				
 			// отрисовка точек
-			Point p1 = new Point(27,3,'*');
-			p1.Draw();
+			Point p = new Point(4,5,'*');
+			Snake snake = new Snake(p,4, Direction.RIGHT);
+			snake.Draw();
 			
-			Point p2 = new Point(19,13,'^');
-			p2.Draw();
-			
-			HLine line = new HLine(5,10,8,'+');
-			line.Draw();
 			
 				
 			Console.ReadKey();

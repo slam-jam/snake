@@ -1,12 +1,4 @@
-﻿/*
- * Created by SharpDevelop.
- * User: Admin
- * Date: 19.10.2016
- * Time: 12:22
- * 
- * To change this template use Tools | Options | Coding | Edit Standard Headers.
- */
-using System;
+﻿using System;
 
 namespace snake
 {
@@ -14,12 +6,18 @@ namespace snake
 	{
 		public static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
+			int x = 33;
+			int y = 7;
+			char c = '&';
 			
-			// TODO: Implement Functionality Here
+			Draw(x,y,c);
+			Console.ReadKey();
 			
-			Console.Write("Press any key to continue . . . ");
-			Console.ReadLine();
+		}
+		static void Draw(int x, int y, char c)
+		{
+			Console.SetCursorPosition(x,y);
+			Console.Write(c);
 		}
 	}
 }

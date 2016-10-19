@@ -4,22 +4,15 @@ namespace snake
 {
 	class Program
 	{
-		public static void Main(string[] args)
+		static void Main(string[] args)
 		{
-			Point p1 = new Point();
-			p1.x = 7;
-			p1.y = 3;
-			p1.s = '$';
+			Point p1 = new Point(27,3,'*');
 			p1.Draw();
 			
-			Point p2 = new Point();
-			p2.x = 22;
-			p2.y = 5;
-			p2.s = '%';
+			Point p2 = new Point(19,13,'^');
 			p2.Draw();
 			
 			Console.ReadKey();
-			
 		}
 		
 	}
